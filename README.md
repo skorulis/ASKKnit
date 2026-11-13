@@ -1,4 +1,5 @@
 # Knit
+NOTE: This code is forked from https://github.com/cashapp/knit but is using a separate repository name to avoid clashes in Swift Package Manager. Since the source repository seems abandoned this may diverge as time progresses.
 
 A tool for adding safety features to Swinject.
 Knit parses Swinject code and generates Swift files for type safety and unit testing.
