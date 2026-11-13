@@ -37,14 +37,8 @@ extension KnitBuildPlugin: XcodeBuildToolPlugin {
         context: XcodePluginContext,
         target: XcodeTarget
     ) throws -> [Command] {
-        guard let configFile = context.xcodeProject.filePaths
-            .map({ path in
-                // The `context.xcodeProject` only exposes `filePaths`. Something like `fileURLs` is not yet available
-                URL(filePath: path.string)
-            })
-            .first(where: { url in
-                url.lastPathComponent == "knitconfig.json"
-        }) else {
+        let configFile = getTargetConfig(target) ?? getProjectConfig(context.xcodeProject)
+        guard let configFile else {
             Diagnostics.error("No `knitconfig.json` file was found in the project.")
             return []
         }
@@ -55,6 +49,23 @@ extension KnitBuildPlugin: XcodeBuildToolPlugin {
                 target: target
             )
         ]
+    }
+    
+    private func getProjectConfig(_ xcodeProject: XcodeProject) -> URL? {
+        return xcodeProject.filePaths
+            .map({ path in
+                // The `context.xcodeProject` only exposes `filePaths`. Something like `fileURLs` is not yet available
+                URL(filePath: path.string)
+            })
+            .first(where: { url in
+                url.lastPathComponent == "knitconfig.json"
+            })
+    }
+    
+    private func getTargetConfig(_ target: XcodeTarget) -> URL? {
+        return target.inputFiles
+            .map { $0.url }
+            .first { $0.lastPathComponent == "knitconfig.json" }
     }
 
 }
