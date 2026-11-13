@@ -1,0 +1,6 @@
+{
+    "assemblyInputPaths": [
+        "KnitExampleAssembly.swift",
+        "KnitExampleUserAssembly.swift",
+    ]
+}

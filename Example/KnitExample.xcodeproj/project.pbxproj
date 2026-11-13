@@ -3,17 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2CF2570E2CACB3300017B59A /* Knit in Frameworks */ = {isa = PBXBuildFile; productRef = 2CF2570D2CACB3300017B59A /* Knit */; };
-		C40D0D1F2A838D140095AC59 /* KnitExampleUserAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40D0D1E2A838D140095AC59 /* KnitExampleUserAssembly.swift */; };
-		C43334F32A3FDD43003BA9E3 /* KnitExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43334F22A3FDD43003BA9E3 /* KnitExampleApp.swift */; };
-		C43334F52A3FDD43003BA9E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43334F42A3FDD43003BA9E3 /* ContentView.swift */; };
-		C43334F72A3FDD44003BA9E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C43334F62A3FDD44003BA9E3 /* Assets.xcassets */; };
-		C43334FA2A3FDD44003BA9E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C43334F92A3FDD44003BA9E3 /* Preview Assets.xcassets */; };
-		C43335062A3FDDD3003BA9E3 /* KnitExampleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43335052A3FDDD3003BA9E3 /* KnitExampleAssembly.swift */; };
 		C4372DDF2D77D676009A668B /* KnitMacros in Frameworks */ = {isa = PBXBuildFile; productRef = C4372DDE2D77D676009A668B /* KnitMacros */; };
 		C44755192A3FEA740072333A /* TestModuleAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44755182A3FEA740072333A /* TestModuleAssembler.swift */; };
 		C4DB9D212D6FE9B300EC01A6 /* KnitTesting in Frameworks */ = {isa = PBXBuildFile; productRef = C4DB9D202D6FE9B300EC01A6 /* KnitTesting */; };
@@ -30,17 +24,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2CEFF63D2C75B1800069B6D6 /* knitconfig.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = knitconfig.json; sourceTree = "<group>"; };
-		C40D0D1E2A838D140095AC59 /* KnitExampleUserAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnitExampleUserAssembly.swift; sourceTree = "<group>"; };
 		C43334EF2A3FDD43003BA9E3 /* KnitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C43334F22A3FDD43003BA9E3 /* KnitExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnitExampleApp.swift; sourceTree = "<group>"; };
-		C43334F42A3FDD43003BA9E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C43334F62A3FDD44003BA9E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C43334F92A3FDD44003BA9E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C43335052A3FDDD3003BA9E3 /* KnitExampleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnitExampleAssembly.swift; sourceTree = "<group>"; };
 		C447550D2A3FEA120072333A /* KnitExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnitExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44755182A3FEA740072333A /* TestModuleAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModuleAssembler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FAA288E52FD13FA0002E4981 /* KnitExample */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = KnitExample; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C43334EC2A3FDD43003BA9E3 /* Frameworks */ = {
@@ -66,8 +57,7 @@
 		C43334E62A3FDD43003BA9E3 = {
 			isa = PBXGroup;
 			children = (
-				2CEFF63D2C75B1800069B6D6 /* knitconfig.json */,
-				C43334F12A3FDD43003BA9E3 /* KnitExample */,
+				FAA288E52FD13FA0002E4981 /* KnitExample */,
 				C447550E2A3FEA120072333A /* KnitExampleTests */,
 				C43334F02A3FDD43003BA9E3 /* Products */,
 				C43335082A3FDF68003BA9E3 /* Frameworks */,
@@ -81,27 +71,6 @@
 				C447550D2A3FEA120072333A /* KnitExampleTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		C43334F12A3FDD43003BA9E3 /* KnitExample */ = {
-			isa = PBXGroup;
-			children = (
-				C43334F22A3FDD43003BA9E3 /* KnitExampleApp.swift */,
-				C43334F42A3FDD43003BA9E3 /* ContentView.swift */,
-				C43334F62A3FDD44003BA9E3 /* Assets.xcassets */,
-				C43334F82A3FDD44003BA9E3 /* Preview Content */,
-				C43335052A3FDDD3003BA9E3 /* KnitExampleAssembly.swift */,
-				C40D0D1E2A838D140095AC59 /* KnitExampleUserAssembly.swift */,
-			);
-			path = KnitExample;
-			sourceTree = "<group>";
-		};
-		C43334F82A3FDD44003BA9E3 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				C43334F92A3FDD44003BA9E3 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		C43335082A3FDF68003BA9E3 /* Frameworks */ = {
@@ -134,6 +103,9 @@
 			);
 			dependencies = (
 				2CF257102CACB3500017B59A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FAA288E52FD13FA0002E4981 /* KnitExample */,
 			);
 			name = KnitExample;
 			packageProductDependencies = (
@@ -212,8 +184,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C43334FA2A3FDD44003BA9E3 /* Preview Assets.xcassets in Resources */,
-				C43334F72A3FDD44003BA9E3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,10 +201,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C40D0D1F2A838D140095AC59 /* KnitExampleUserAssembly.swift in Sources */,
-				C43334F52A3FDD43003BA9E3 /* ContentView.swift in Sources */,
-				C43334F32A3FDD43003BA9E3 /* KnitExampleApp.swift in Sources */,
-				C43335062A3FDDD3003BA9E3 /* KnitExampleAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,7 +365,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -429,7 +395,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
